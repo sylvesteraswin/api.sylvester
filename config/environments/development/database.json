@@ -1,0 +1,21 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "ds247310.mlab.com",
+        "srv": false,
+        "port": "47310",
+        "database": "api_sylvesteraswin",
+        "username": "sylvesteraswin",
+        "password": "YK)8[;aC7\"zfd8H)t7"
+      },
+      "options": {
+        "authenticationDatabase": "api_sylvesteraswin",
+        "ssl": false
+      }
+    }
+  }
+}

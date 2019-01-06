@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "albums",
+  "info": {
+    "name": "memories",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "default": "",
+      "type": "string"
+    },
+    "Description": {
+      "default": "",
+      "type": "text"
+    },
+    "images": {
+      "model": "image",
+      "via": "memories"
+    }
+  }
+}

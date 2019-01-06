@@ -1,0 +1,51 @@
+{
+  "connection": "default",
+  "collectionName": "image",
+  "info": {
+    "name": "image",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "published": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "isLive": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "isProtected": {
+      "default": false,
+      "type": "boolean"
+    },
+    "password": {
+      "default": "",
+      "type": "password"
+    },
+    "memories": {
+      "collection": "memories",
+      "via": "images"
+    }
+  }
+}

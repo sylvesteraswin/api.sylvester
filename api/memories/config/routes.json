@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/memories",
+      "handler": "Memories.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/memories/count",
+      "handler": "Memories.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/memories/:_id",
+      "handler": "Memories.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/memories",
+      "handler": "Memories.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/memories/:_id",
+      "handler": "Memories.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/memories/:_id",
+      "handler": "Memories.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
